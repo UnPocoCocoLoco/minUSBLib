@@ -13,7 +13,7 @@ stm32f10x_usb  - High level functions to init USB and handle interrupt.
 How to use it?
 Include "stm32f10x_usb.h" header in main. Edit UserFunction in usb_com.c to precise communication policy.
 UserFunction is a callback function called every time when Control Packet with Endpoint Recipient and Vendor Request is received.
-If you use <a href="libusbx.org"> libusbX as PC's USB host library</a>, which I strongly recommend, you should send following exemplary packet:br>
+If you useibusbX (libusbx.org) as PC's USB host library, which I strongly recommend, you should send following exemplary packet:br>
 
 libusb_control_transfer ( handle,
 LIBUSB_ENDPOINT_OUT|LIBUSB_REQUEST_TYPE_VENDOR|LIBUSB_RECIPIENT_ENDPOINT,
